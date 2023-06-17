@@ -4,17 +4,34 @@
     <title>Water Purification Study</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="webpage.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript">
-	    var userAgent = navigator.userAgent.toLowerCase();
-	    var isMobile = /(iphone|ipod|ipad|android)/.test(userAgent);
-	    
-	    if (isMobile) {
-	      document.body.innerHTML = "<h1>Please use a laptop or personal computer to access this website.</h1>";
-	    }
-	</script>
+	<script>
+        function closeNotice() {
+            document.getElementById('notice').style.display = 'none';
+        }
+    </script>
 </head>
 
 <body>
+	<div id="notice" class="notice">
+  		<span class="close" onclick="closeNotice()">X</span>
+  		<p>We recommend you to open this website using a laptop or personal computer for optimal experience.</p>
+	</div>
+
+	<script>
+		function closeNotice() {
+	  		var notice = document.getElementById('notice');
+	  		notice.style.display = 'none';
+		}
+	
+		window.addEventListener('load', function() {
+	  		var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+	  		if (isMobile) {
+	    	var notice = document.getElementById('notice');
+	    	notice.classList.add('show');
+	  		}
+		});
+	</script>	
+	
 	<div class="title-menu-wrapper">
 		<div class="title">
 	  		<table style="width: 100%; padding-left: 20px">
