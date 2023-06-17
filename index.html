@@ -4,6 +4,14 @@
     <title>Water Purification Study</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="webpage.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript">
+	    var userAgent = navigator.userAgent.toLowerCase();
+	    var isMobile = /(iphone|ipod|ipad|android)/.test(userAgent);
+	    
+	    if (isMobile) {
+	      document.body.innerHTML = "<h1>Please use a laptop or personal computer to access this website.</h1>";
+	    }
+	</script>
 </head>
 
 <body>
@@ -927,17 +935,52 @@
 			<tr style="background-color: white">
 				<td style="width: 10%"></td>
 				<td style="width: 70%">
-					<h2>im tired</h2>
+					<h2>What challenges did you encounter during the research and experimentation process?</h2>
+					<p class="list" style="text-align: justify">During our research and experimentation process, we faced several challenges. One of the main challenges was sourcing the necessary equipment and materials within our limited budget. We had to carefully plan and allocate resources to ensure we had everything we needed for the experiments. Additionally, we encountered technical difficulties during the setup of some purification methods, which required troubleshooting and innovative problem-solving. Time management was another challenge as we had to balance our academic commitments and extracurricular activities while dedicating enough time to the project. However, we overcame these challenges through effective teamwork, perseverance, and seeking guidance from our mentors.</p>
 				</td>
 				<td style="width: 10%"></td>
 			</tr>
 			<tr>
 				<td style="width: 10%"></td>
 				<td style="width: 70%">
-					<h2>im sleepy</h2>
+					<h2>How did you ensure the accuracy and reliability of your data?</h2>
+					<p class="list" style="text-align: justify">Ensuring the accuracy and reliability of our data was a top priority for us. We followed rigorous experimental protocols and adhered to scientific standards throughout the process. To minimize experimental error, we conducted multiple trials for each purification method and carefully recorded all relevant data and observations. We also implemented appropriate controls to account for any external factors that could affect the results. Regular calibration of measuring instruments, such as pH meters and turbidity sensors, was performed to maintain accuracy. Furthermore, we employed statistical analysis techniques to validate our findings and identify any significant patterns or trends in the data.</p>
 				</td>
 				<td style="width: 10%"></td>
 			</tr>
+			<tr style="background-color: white">
+				<td style="width: 10%"></td>
+				<td style="width: 70%">
+					<h2>Did you face any ethical considerations during your investigation, and how did you address them?</h2>
+					<p class="list" style="text-align: justify">Ethical considerations were an integral part of our investigation. In the case of water purification experiments, we took utmost care to prevent any environmental contamination by properly disposing of chemical waste and following safety protocols. We also respected the privacy and confidentiality of participants in surveys or interviews conducted as part of our research. By prioritizing ethical conduct and seeking guidance from mentors and professionals, we were able to navigate potential ethical challenges effectively.</p>
+				</td>
+				<td style="width: 10%"></td>
+			</tr>
+			<tr>
+				<td style="width: 10%"></td>
+				<td style="width: 70%">
+					<h2>What were the limitations of your study, and how could they be addressed in future research?</h2>
+					<p class="list" style="text-align: justify">Like any scientific study, our investigation had certain limitations. One limitation was the scale of our experiments, which were conducted in a controlled laboratory setting. In future research, conducting large-scale field studies could provide more realistic insights into water purification challenges. Additionally, our investigation focused on a select number of purification methods, and there are other emerging technologies and approaches that could be explored. Expanding the scope of the study to include a wider range of purification techniques would provide a more comprehensive understanding of water treatment options. Furthermore, long-term monitoring of purified water sources could provide insights into the sustainability and effectiveness of the purification methods over time.</p>
+				</td>
+				<td style="width: 10%"></td>
+			</tr>
+			<tr style="background-color: white">
+				<td style="width: 10%"></td>
+				<td style="width: 70%">
+					<h2>Did you face any unexpected or interesting results during your experimentation, and how did you interpret them?</h2>
+					<p class="list" style="text-align: justify">Yes, we did encounter some unexpected and interesting results during our experimentation. In one instance, we found that a certain combination of purification methods yielded significantly better results in terms of removing pollutants compared to individual methods. This led us to explore the synergistic effects of combining different techniques for more effective water purification. Additionally, we observed variations in water quality depending on the source and initial contamination levels, which highlighted the importance of site-specific considerations in selecting appropriate purification methods. These unexpected results prompted us to delve deeper into the underlying mechanisms and develop a more nuanced understanding of water treatment processes.</p>
+				</td>
+				<td style="width: 10%"></td>
+			</tr>
+			<tr>
+				<td style="width: 10%"></td>
+				<td style="width: 70%">
+					<h2>How can individuals reduce their water consumption and contribute to water conservation efforts alongside purification?</h2>
+					<p class="list" style="text-align: justify; margin-bottom: 30px">Individuals can play a crucial role in reducing water consumption and contributing to water conservation efforts alongside water purification. Firstly, practicing mindful water usage habits such as turning off taps when not in use, taking shorter showers, and fixing any leaks promptly can significantly reduce water waste. Secondly, using water-efficient appliances and fixtures, such as low-flow showerheads and toilets, can further minimize water usage. Additionally, collecting rainwater for activities like gardening and using recycled or greywater for non-potable purposes can help conserve water resources. Lastly, raising awareness about the importance of water conservation and sharing tips with friends, family, and the community can inspire more people to adopt water-saving practices. By making these small yet impactful changes in daily routines, individuals can contribute to sustainable water management alongside water purification efforts.</p>
+				</td>
+				<td style="width: 10%"></td>
+			</tr>
+
 		</table>
     </div>
     
@@ -1143,81 +1186,82 @@
 	</script>	    
 	<script>
         function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("content");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-            document.querySelector(".progress-bar").style.width = "0%";
-        }
-        
-		function updateProgressBar() {
-  			var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  			var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  			var scrolled = (winScroll / height) * 100;
-  			document.querySelector(".progress-bar").style.width = scrolled + "%";
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("content");
+		  for (i = 0; i < tabcontent.length; i++) {
+		    tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+		    tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(tabName).style.display = "block";
+		  evt.currentTarget.className += " active";
+		  document.querySelector(".progress-bar").style.width = "0%";
+		  window.scrollTo(0, 0); // Scroll to the top of the page
 		}
-
+		
+		function updateProgressBar() {
+		  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+		  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+		  var scrolled = (winScroll / height) * 100;
+		  document.querySelector(".progress-bar").style.width = scrolled + "%";
+		}
+		
 		window.onscroll = function() {
-  			updateProgressBar();
-		};    
+		  updateProgressBar();
+		};
 		
 		function getRandomNumber() {
-	        return Math.floor(Math.random() * 10);
-	    }
-	
-	    function formatNumberWithCommas(number) {
-	        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-	    }
-	
-	    function rollCounter() {
-	        var counter = document.getElementById('counter');
-	        var rollingTimeout = 4000;
-	        var targetTimeout = 10000;
-	        var totalCount = 2300000000;
-	
-	        var startTime = Date.now();
-	        var timer = setInterval(function() {
-	            var elapsedTime = Date.now() - startTime;
-	            if (elapsedTime < rollingTimeout) {
-	                var randomNumbers = Array(10).fill(0).map(getRandomNumber);
-	                var formattedNumber = randomNumbers.join('');
-	                var commaIndex = 9;
-	                counter.innerHTML = formattedNumber.split('').map(function(number) {
-	                    if (commaIndex > 0 && commaIndex % 3 === 0) {
-	                        commaIndex--;
-	                        return '<td>' + number + '</td><td>,</td>';
-	                    } else {
-	                        commaIndex--;
-	                        return '<td>' + number + '</td>';
-	                    }
-	                }).join('');
-	            } else if (elapsedTime < targetTimeout) {
-	                var formattedNumber = formatNumberWithCommas(totalCount);
-	                var commaIndex = formattedNumber.length - 1;
-	                counter.innerHTML = formattedNumber.split('').map(function(number) {
-	                    if (commaIndex > 0 && commaIndex % 3 === 0) {
-	                        commaIndex--;
-	                        return '<td>' + number + '</td>';
-	                    } else {
-	                        commaIndex--;
-	                        return '<td>' + number + '</td>';
-	                    }
-	                }).join('');
-	            } else {
-	                clearInterval(timer);
-	                rollCounter();
-	            }
-	        }, 100);
-	    }
-	
-	    setTimeout(rollCounter, 0);
+		  return Math.floor(Math.random() * 10);
+		}
+		
+		function formatNumberWithCommas(number) {
+		  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		}
+		
+		function rollCounter() {
+		  var counter = document.getElementById('counter');
+		  var rollingTimeout = 4000;
+		  var targetTimeout = 10000;
+		  var totalCount = 2300000000;
+		
+		  var startTime = Date.now();
+		  var timer = setInterval(function() {
+		    var elapsedTime = Date.now() - startTime;
+		    if (elapsedTime < rollingTimeout) {
+		      var randomNumbers = Array(10).fill(0).map(getRandomNumber);
+		      var formattedNumber = randomNumbers.join('');
+		      var commaIndex = 9;
+		      counter.innerHTML = formattedNumber.split('').map(function(number) {
+		        if (commaIndex > 0 && commaIndex % 3 === 0) {
+		          commaIndex--;
+		          return '<td>' + number + '</td><td>,</td>';
+		        } else {
+		          commaIndex--;
+		          return '<td>' + number + '</td>';
+		        }
+		      }).join('');
+		    } else if (elapsedTime < targetTimeout) {
+		      var formattedNumber = formatNumberWithCommas(totalCount);
+		      var commaIndex = formattedNumber.length - 1;
+		      counter.innerHTML = formattedNumber.split('').map(function(number) {
+		        if (commaIndex > 0 && commaIndex % 3 === 0) {
+		          commaIndex--;
+		          return '<td>' + number + '</td>';
+		        } else {
+		          commaIndex--;
+		          return '<td>' + number + '</td>';
+		        }
+		      }).join('');
+		    } else {
+		      clearInterval(timer);
+		      rollCounter();
+		    }
+		  }, 100);
+		}
+		
+		setTimeout(rollCounter, 0);
 	</script>
 </body>
 </html>
