@@ -1266,7 +1266,7 @@
 		var clickCount = 0;
 		function toggleImage() {
 			clickCount++;
-			if (clickCount === 1) {
+			if (clickCount === -1) {
             var image = document.getElementById("myImage");
 	        	if (image.src.includes("images/real_saras.png")) {
 	                image.src = "images/saras.png";
@@ -1277,7 +1277,7 @@
 	    	}
         }
         
-        setInterval(toggleImage, 5000);
+        /*setInterval(toggleImage, 5000);*/
 	</script>
 </body>
 </html>
